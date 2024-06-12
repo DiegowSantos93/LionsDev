@@ -1,0 +1,12 @@
+"git init" na pasta que está o fonte
+
+"git add" + nome do arquivo que vai subir ou "git add ." para subir a pasta toda.
+
+git commit -m "Mensagem do commit"
+
+git remote add origin "URL" quando for a primeira vez.
+
+git remote set-url https://github.com/DiegowSantos93/LionsDev.git para incluir/editar arquivo.
+
+git push -u origin master para subir o commit de vez para o github.
+
