@@ -1,0 +1,12 @@
+mkdir --- cria pasta
+cp --- cópia
+touch --- cria arquivo
+echo --- escreve no arquivo
+pwd --- mostra o caminho de onde você está
+rm --- remove o arquivo
+rm -r --- remove a pasta
+cd .. --- volta uma pasta
+> --- escrevo dentro do arquivo
+>> --- incluir texto no arquivo
+nano --- abre o arquivo e o seu conteúdo
+--help --- ajuda

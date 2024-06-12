@@ -39,60 +39,8 @@
 // // console.log(soma)
 
 // Exercicio 6
-// A
 let notas = [7.5, 8.0, 6.0, 9.5, 5.0, 8.5, 7.0, 10.0, 6.5, 9.0]
-// let soma = 0;
-// let media = 0;
-// for (let x = 0; x < notas.length; x++) {
-//     soma += notas[x]
-//     media = soma / notas.length
-// }
-// console.log(media)
 
-// B
-// let maiorNota = notas[0];
-// let menorNota = notas[0];
-
-// for (let i = 0; i < notas.length; i++){
-//     if (notas[i] > maiorNota){
-//         maiorNota = notas[i]
-//     }
-//     if (notas[i] < menorNota){
-//         menorNota = notas[i]
-//     }
-// }
-
-// // notas.forEach(function(nota) {
-// //     if (nota > maiorNota){
-// //         maiorNota = nota
-// //     } if (nota < menorNota){
-// //         menorNota = nota
-// //     }
-// // });
-
-// console.log(maiorNota)
-// console.log(menorNota)
-
-// C
-// let acimaMédia = 0
-// for (let x = 0; x < notas.length; x++) {
-//     if (notas[x] >= media) {
-//         acimaMédia++
-//     }
-// }
-// console.log(acimaMédia)
-
-// D
-// notas.push(8.1)
-// console.log(notas)
-
-//E
-// let reprovados = 0;
-// for (let z = 0; z < notas.length; z++) {
-//     if (notas[z] < 6.0){
-//         reprovados++
-//         console.log('são', reprovados, 'reprovados')
-//     }
-// }
-
-console.log(    Teste)
+for (let i = 0; i < notas.length; i++){
+    console.log(notas[i]);
+}

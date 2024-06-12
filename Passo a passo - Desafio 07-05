@@ -1,0 +1,43 @@
+Primeiro me localizei onde estava com o pwd
+usuario016@PC6:~$ pwd
+
+Depois criei a pasta Estacao Espacial
+usuario016@PC6:~$ cd Documentos
+usuario016@PC6:~/Documentos$ cd EstacaoEspacial
+
+Depois criei as pastas dentro da EstacaoEspacial e depois dentro das proximas pastas.
+usuario016@PC6:~/Documentos/EstacaoEspacial$ mkdir Habitacao Laboratorio Hangar
+usuario016@PC6:~/Documentos/EstacaoEspacial$ cd Habitacao
+usuario016@PC6:~/Documentos/EstacaoEspacial/Habitacao$ mkdir quarto1 quarto2 quarto3
+usuario016@PC6:~/Documentos/EstacaoEspacial/Habitacao$ cd ..
+usuario016@PC6:~/Documentos/EstacaoEspacial$ cd Laboratorio
+usuario016@PC6:~/Documentos/EstacaoEspacial/Laboratorio$ mkdir Pesquisa1 Pesquisa2
+usuario016@PC6:~/Documentos/EstacaoEspacial/Laboratorio$ cd ..
+usuario016@PC6:~/Documentos/EstacaoEspacial$ cd Hangar
+usuario016@PC6:~/Documentos/EstacaoEspacial/Hangar$ mkdir Nave1 Nave2 Nave3
+usuario016@PC6:~/Documentos/EstacaoEspacial/Hangar$ cd ..
+
+Depois usei pwd para me localizar
+usuario016@PC6:~/Documentos/EstacaoEspacial$ pwd
+/home/usuario016/Documentos/EstacaoEspacial
+usuario016@PC6:~/Documentos/EstacaoEspacial$ rm /home/usuario016/Documentos/EstacaoEspacial/Hangar
+rm: não foi possível remover '/home/usuario016/Documentos/EstacaoEspacial/Hangar': É um diretório
+
+Usei a ajuda para deletar um diretório
+usuario016@PC6:~/Documentos/EstacaoEspacial$ rm -help
+rm: opção inválida -- “h”
+Tente "rm --help" para mais informações.
+usuario016@PC6:~/Documentos/EstacaoEspacial$ rm --help
+
+Consegui remover o diretório
+usuario016@PC6:~/Documentos/EstacaoEspacial$ rm -r Hangar
+usuario016@PC6:~/Documentos/EstacaoEspacial$ touch BoasVindas.txt
+usuario016@PC6:~/Documentos/EstacaoEspacial$ echo "Bem-vindos à Estação Espacial!" > BoasVindas.txt
+
+Usei pwd para me localizar
+usuario016@PC6:~/Documentos/EstacaoEspacial$ pwd
+/home/usuario016/Documentos/EstacaoEspacial
+usuario016@PC6:~/Documentos/EstacaoEspacial$ cp BoasVindas.txt /home/usuario016/Documentos/EstacaoEspacial/Laboratorio
+usuario016@PC6:~/Documentos/EstacaoEspacial$ cd Laboratorio
+usuario016@PC6:~/Documentos/EstacaoEspacial/Laboratorio$ echo "Bem-vindos à Estação Espacial! Este é o laboratório!" > BoasVindas.txt
+
