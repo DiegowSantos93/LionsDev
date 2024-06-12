@@ -21,5 +21,3 @@ process.stdin.once("data", function(data){
     console.log('Ah, então', nome.trim(), 'você tem', idade.trim(), 'anos!')
     process.exit();
 })})
-
-//Comentário novo
