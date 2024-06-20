@@ -82,3 +82,5 @@ function calculadora(resultadoAnterior = null) {
 calculadora(); 
 
 //teste
+
+// novo
