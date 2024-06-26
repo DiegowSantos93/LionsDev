@@ -56,7 +56,8 @@ while (true) {
     1. Nome do paciente
     2. Médico responsável
     3. Data da consulta
-    4. Horário da consulta `));
+    4. Horário da consulta
+    `));
 
                 if (edicaoDados > 0 && edicaoDados <= 4) {
                     switch (edicaoDados) {
@@ -116,6 +117,7 @@ while (true) {
                 process.exit();
                 break;
         }
+        console.log(consultas)
     } else {
         console.log('Opção inválida, tente novamente.');
     }
