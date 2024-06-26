@@ -14,6 +14,7 @@ while (true) {
 
     let opcao = Number(prompt("Escolha uma opção: "));
 
+    if (opcao > 0 && opcao <= 5) {
     switch (opcao) {
         case 1:
             let nome = prompt('Qual o nome do paciente? ')
@@ -94,5 +95,8 @@ while (true) {
         case 5:
             console.log('Saindo do sistema, até logo!')
             process.exit();
+    }
+    } else {
+        console.log('Opção inválida, tente novamente.');
     }
 }
