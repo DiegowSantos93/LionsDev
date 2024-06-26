@@ -45,7 +45,8 @@ while (true) {
                 let consultaSelecionada = consultas[edicao - 1];
                 let edicaoDados = Number(prompt(`Qual informação deseja alterar na consulta do(a) ${consultaSelecionada.nome}? Digite o número da opção desejada:\n1. Nome do paciente\n2. Médico responsável\n3. Data da consulta\n4. Horário da consulta `));                
                 
-                switch (edicaoDados) {
+                if (edicaoDados > 0 && edicaoDados <= 4){
+                    switch (edicaoDados) {
                     case 1:
                         let novoNome = prompt('Qual o nome do paciente? ');
                         consultaSelecionada.nome = novoNome
@@ -62,17 +63,16 @@ while (true) {
                         let novoHorario = prompt('Qual o novo horário da consulta? ');
                         consultaSelecionada.horario = novoHorario;
                         break;
-                    default:
-                        console.log('Opção inválida.');
-                        break;
-                }
-                
-            console.log(`Consulta alterada com sucesso! Estas são as consultas agendadas:`)
+                    }
+                console.log(`Consulta alterada com sucesso! Estas são as consultas agendadas:`)
                 consultas.forEach((consultas, index) => {
                 console.log(`${index + 1}. Paciente: ${consultas.nome} - Médico: Dr. ${consultas.medico} - Data da consulta: ${consultas.data} - Horário da consulta: ${consultas.horario}.`)
             });
+                } else {
+                    console.log('Opção inválida, tente novamente.')
+                }
             } else {
-                console.log('Número inválido, tente novamente.');
+                console.log('Opção inválida, tente novamente.');
             }
             break;
         case 4:
@@ -87,6 +87,8 @@ while (true) {
                         consultas.forEach((consultas, index) => {
                         console.log(`${index + 1}. Paciente: ${consultas.nome} - Médico: Dr. ${consultas.medico} - Data da consulta: ${consultas.data} - Horário da consulta: ${consultas.horario}.`)
                     });
+                } else {
+                    console.log('Opção inválida, tente novamente.');
                 }
             break;
         case 5:
