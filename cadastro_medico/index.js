@@ -50,14 +50,7 @@ while (true) {
                 if (edicao > 0 && edicao <= consultas.length) {
                     let consultaSelecionada = consultas[edicao - 1];
                     
-        let edicaoDados = Number(prompt(`
-    Qual informação deseja alterar na consulta do(a) ${consultaSelecionada.nome}? 
-    Digite o número da opção desejada:
-    1. Nome do paciente
-    2. Médico responsável
-    3. Data da consulta
-    4. Horário da consulta
-    `));
+                let edicaoDados = Number(prompt(`Qual informação deseja alterar na consulta do(a) ${consultaSelecionada.nome}? Digite o número da opção desejada: 1. Nome do paciente 2. Médico responsável 3. Data da consulta 4. Horário da consulta: `));
 
                 if (edicaoDados > 0 && edicaoDados <= 4) {
                     switch (edicaoDados) {
@@ -117,7 +110,6 @@ while (true) {
                 process.exit();
                 break;
         }
-        console.log(consultas)
     } else {
         console.log('Opção inválida, tente novamente.');
     }
