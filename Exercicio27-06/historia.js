@@ -1,22 +1,22 @@
 const prompt = require("prompt-sync")({ sigint: true });
 
-let texto = prompt('Digite seu texto: ');
+let historia = prompt('Digite seu texto: ');
 
-let textoEditado = texto.split(/[. ,:!?]/).filter(Boolean)
+let palavras = historia.split(/[. ,:!?]/).filter(Boolean);
 
-let palavra = 0
+let numeroDePalavras = palavras.length;
 
-let repeticao = 0
+let frequenciaPalavras = {};
 
-for (let x = 0; x < textoEditado.length; x++) {
-    textoEditado = textoEditado[x].toLowerCase();
+for (let x = 0; x < palavras.length; x++) {
+    let palavra = palavras[x].toLowerCase();
 
-    if (textoEditado[x]){
-        repeticao[x]++;
+    if (frequenciaPalavras[palavra]){
+        frequenciaPalavras[palavra]++;
     } else {
-        repeticao[x] = 1
+        frequenciaPalavras[palavra] = 1
     }
 }
 
-console.log(textoEditado.length)
-console.log(repeticao)
+console.log(`Existem ${numeroDePalavras} palavras.`)
+console.log('Essa é a frequência das palavras:\n',frequenciaPalavras)
